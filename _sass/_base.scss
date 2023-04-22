@@ -75,7 +75,7 @@ aside {
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
-        color: $theme-primary;
+        color: $text-color;
         @include sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
@@ -93,13 +93,15 @@ aside {
                 font-size: 13px;
                 color: $theme-dark;
                 &:hover {
-                    color: $theme-primary;
+                    color: $text-color;
+                    text-decoration: underline;
                 }
             }
             &.active {
                 > a,
                 > a:focus {
-                    color: $theme-primary !important;
+                    color: $text-color !important;
+                    text-decoration: underline;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -112,7 +114,7 @@ aside {
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: rgba(white, .8);
             &:hover,
             &:focus {
                 color: white;
@@ -120,27 +122,27 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: rgba($theme-primary, .8);
             &:hover {
-                color: white;
+                color: $theme-primary;
             }
         }
         &.affix {
             background-color: white;
-            border-color: rgba($theme-dark, .5);
+            border-color: rgba($theme-dark, .8);
             .navbar-header .navbar-brand {
-                color: $theme-primary;
-                font-size: 14px;
+                color: $text-color;
+                font-size: 16px;
                 &:hover,
                 &:focus {
-                    color: darken($theme-primary, 10%);
+                    color: darken($text-color, 10%);
                 }
             }
             .nav > li > a,
             .nav > li > a:focus {
                 color: $theme-dark;
                 &:hover {
-                    color: $theme-primary;
+                    color: $text-color;
                 }
             }
         }
@@ -206,6 +208,14 @@ header {
 }
 
 // Sections
+
+.about {
+    background-color:$theme-primary ;
+    color:black;
+    border: 5px solid rgb(0, 0, 0);
+    margin:15%;
+    padding: 20px;
+}
 
 .section-heading {
     margin-top: 0;
