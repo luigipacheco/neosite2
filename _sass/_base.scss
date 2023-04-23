@@ -78,7 +78,7 @@ aside {
         color: $text-color;
         @include sans-serif-font;
         font-weight: 700;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
@@ -88,7 +88,7 @@ aside {
         > li {
             > a,
             > a:focus {
-                text-transform: uppercase;
+                //text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
                 color: $theme-dark;
@@ -216,13 +216,20 @@ header {
     margin:15%;
     padding: 50px;
 }
+.services {
+    background-color:$theme-primary ;
+    color:black;
+    margin:15%;
+
+}
 .contact {
     background-color:$theme-dark ;
     color:rgb(255, 255, 255);
+    margin-top:15%;
 }
 
 .section-heading {
-    margin-top: 0;
+
     font-size: 40px;
 }
 
