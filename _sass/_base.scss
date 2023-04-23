@@ -216,9 +216,14 @@ header {
     margin:15%;
     padding: 50px;
 }
+.contact {
+    background-color:$theme-dark ;
+    color:rgb(255, 255, 255);
+}
 
 .section-heading {
     margin-top: 0;
+    font-size: 40px;
 }
 
 .service-box {
@@ -327,8 +332,11 @@ header {
 
 // Contact
 #contact .fa {
-    color: $theme-dark;
-    font-size: 4em;
+    color: $theme-primary;
+    font-size: 2em;
+}
+.icon{
+    margin: 5px;
 }
 
 // Extras
