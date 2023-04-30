@@ -150,7 +150,9 @@ aside {
 }
 
 // Homepage Header
-
+.cta {
+ background-color: rgba($theme-dark, .8);
+}
 header {
     position: relative;
     width: 100%;
