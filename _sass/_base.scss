@@ -156,7 +156,7 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+    min-height: 100%;
     @include background-cover;
     background-position: center;
     background-image: url('../img/header.jpg');
@@ -222,6 +222,7 @@ header {
     background-color:$theme-primary ;
     color:black;
     margin-bottom: 15%;
+    width: 80%;
 
 
 }
@@ -376,5 +377,8 @@ img::-moz-selection {
 
 body {
     -webkit-tap-highlight-color: $theme-dark;
+}
+.mainimg{
+    height: 100%;
 }
 
