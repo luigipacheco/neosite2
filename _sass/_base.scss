@@ -6,6 +6,7 @@ body {
 
 body {
     @include serif-font;
+    
 }
 
 hr {
@@ -152,6 +153,8 @@ aside {
 // Homepage Header
 .cta {
  background-color: rgba($theme-dark, .8);
+ margin-top: 50% !important;
+ margin-left: 50%;
 }
 header {
     position: relative;
