@@ -1,13 +1,13 @@
 # Site settings
 title: hype dynamics
-email: hello@hypedynamics.com
+email: luis.pacheco@neobrutal.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
-twitter_username:
-github_username:
-instagram_username:
+facebook: https://www.facebook.com/neobrutalstudio
+linkedin: https://www.linkedin.com/company/79764820
+instagram: https://www.instagram.com/neobrutalstudio/ 
 
 # Build settings
 markdown: kramdown

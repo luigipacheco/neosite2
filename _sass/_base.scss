@@ -71,7 +71,7 @@ aside {
 // Navigation
 
 .navbar-default {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
@@ -153,8 +153,9 @@ aside {
 // Homepage Header
 .cta {
  background-color: rgba($theme-dark, .8);
- margin-top: 50% !important;
- margin-left: 50%;
+ margin-top: 10% !important;
+ margin-left: 0%;
+ margin-right: 70%;
 }
 header {
     position: relative;
@@ -162,7 +163,7 @@ header {
     min-height: 100%;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/header.png');
     text-align: center;
     color: white;
     .header-content {
@@ -238,6 +239,7 @@ header {
 .section-heading {
 
     font-size: 40px;
+
 }
 
 .service-box {
@@ -384,4 +386,7 @@ body {
 .mainimg{
     height: 100%;
 }
-
+.logo{
+    width: 80px;
+    border:1px solid #000000;
+}
