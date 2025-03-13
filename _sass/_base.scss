@@ -290,6 +290,9 @@ header {
 
     .nav {
         > li {
+            display: flex;
+            align-items: center;
+            
             > a {
                 font-family: $sans-font;
                 color: $secondary-color;
