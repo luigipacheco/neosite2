@@ -1,13 +1,26 @@
 # Site settings
-title: Neobrutal
+title: Neobrutal - Architectural 3D Printing Solutions
 email: luis.pacheco@neobrutal.com
 description: > # this means to ignore newlines until "baseurl:"
+  Neobrutal specializes in large-scale 3D printing design and fabrication, mass manufacturing systems, 
+  and additive manufacturing consulting. We transform architectural visions into reality through 
+  advanced manufacturing technology and expert guidance.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "https://neobrutal.com" # the base hostname & protocol for your site
 
+# Social media
 facebook: https://www.facebook.com/neobrutalstudio
 linkedin: https://www.linkedin.com/company/79764820
-instagram: https://www.instagram.com/neobrutalstudio/ 
+instagram: https://www.instagram.com/neobrutalstudio/
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+  projects:
+    output: true
+  services:
+    output: true
+  technologies:
+    output: true
