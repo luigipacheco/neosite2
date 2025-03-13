@@ -1,5 +1,3 @@
-@use "sass:color";
-
 // Brutalist Typography
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=IBM+Plex+Mono:wght@400;700&display=swap');
 
@@ -391,7 +389,7 @@ a {
     color: $theme-primary;
     &:hover,
     &:focus {
-        color: color.scale($theme-primary, $lightness: -10%);
+        color: darken($theme-primary, 10%);
     }
 }
 
@@ -446,15 +444,17 @@ aside {
         color: $text-color;
         @include sans-serif-font;
         font-weight: 700;
+        // text-transform: uppercase;
         &:hover,
         &:focus {
-            color: color.scale($theme-primary, $lightness: -10%);
+            color: darken($theme-primary, 10%);
         }
     }
     .nav {
         > li {
             > a,
             > a:focus {
+                //text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
                 color: $theme-dark;
@@ -483,7 +483,7 @@ aside {
             color: rgba($theme-dark, .8);
             &:hover,
             &:focus {
-                color: color.scale($theme-primary, $lightness: -10%);
+                color: rgba($theme-dark, .8);
             }
         }
         .nav > li > a,
@@ -501,7 +501,7 @@ aside {
                 font-size: 16px;
                 &:hover,
                 &:focus {
-                    color: color.scale($text-color, $lightness: -10%);
+                    color: darken($text-color, 10%);
                 }
             }
             .nav > li > a,
