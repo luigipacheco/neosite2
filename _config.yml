@@ -8,6 +8,9 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://neobrutal.com" # the base hostname & protocol for your site
 
+# Default settings
+default_header_image: /img/headers/default.jpg
+
 # Social media
 facebook: https://www.facebook.com/neobrutalstudio
 linkedin: https://www.linkedin.com/company/79764820
@@ -24,3 +27,5 @@ collections:
     output: true
   technologies:
     output: true
+  header_images:
+    output: false

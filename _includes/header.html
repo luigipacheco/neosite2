@@ -1,9 +1,12 @@
-<header>
+{% assign header_image = include.image | default: site.default_header_image %}
+<header style="background-image: url('{{ header_image }}');">
     <div class="header-content">
         <div class="header-content-inner">
-            <h1 class="cta">ADVANCED ARCHITECTURAL<br>3D PRINTING STUDIO</h1>
-            <p class="lead">Pioneering the future of design & architecture with large-scale 3D printing, robotics, and sustainable materials</p>
-            <a href="#services" class="btn btn-primary btn-xl page-scroll">Explore Our Solutions</a>
+            <h1 class="cta">{{ include.title | default: "ADVANCED ARCHITECTURAL<br>3D PRINTING STUDIO" }}</h1>
+            <p class="lead">{{ include.subtitle | default: "Pioneering the future of design & architecture with large-scale 3D printing, robotics, and sustainable materials" }}</p>
+            {% if include.button_text and include.button_link %}
+            <a href="{{ include.button_link }}" class="btn btn-primary btn-xl page-scroll">{{ include.button_text }}</a>
+            {% endif %}
         </div>
     </div>
 </header>

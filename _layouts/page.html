@@ -9,14 +9,13 @@
     image=page.header_image 
     title=page.header_title 
     subtitle=page.header_subtitle 
-    button_text="Explore Our Solutions" 
-    button_link="#services" %}
-  {% include call-to-action.html %}
-  <!-- {% include products.html %} -->
-  {% include services.html %}
-  {% include form.html %}
+    button_text="Explore More" 
+    button_link="#content" %}
+
+        {{ content }}
+
   {% include contact.html %}
   {% include scripts.html %}
 </body>
 
-</html>
+</html> 
